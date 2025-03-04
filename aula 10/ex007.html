@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Numeros</title>
+    <title>Somando Números</title>
     <style>
         body {
-            background-color: antiquewhite;
-            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            font-family: "Arial", sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        input {
-            border: black 5px 1lpx;
+        h1 {
+            background-color: #6200ee;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        input[type="number"], input[type="button"] {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #6200ee;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #6200ee;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #3700b3;
+        }
+        #res {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número">
+    <input type="number" name="txtn2" id="txtn2" placeholder="Digite outro número">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="res">Resultado aparecerá aqui!</div>
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1');
-            var tn2 = window.document.querySelector('input#txtn2');
-            var res = window.document.getElementById('res');
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var res = document.getElementById('res');
             var n1 = Number(tn1.value);
             var n2 = Number(tn2.value);
             var s = n1 + n2;
-            res.innerText = `A a soma entre ${n1} e ${n2} é igual a ${s}`;
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}.`;
         }
     </script>
 </body>
 </html>
+
