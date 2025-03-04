@@ -43,21 +43,31 @@
 </head>
 <body>
     <h1>Somando Valores</h1>
+    <!-- Campo para o primeiro número -->
     <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número">
+    <!-- Campo para o segundo número -->
     <input type="number" name="txtn2" id="txtn2" placeholder="Digite outro número">
+    <!-- Botão que chama a função para somar -->
     <input type="button" value="Somar" onclick="somar()">
+    <!-- Div onde será exibido o resultado -->
     <div id="res">Resultado aparecerá aqui!</div>
     <script>
         function somar() {
+            // Obtendo o elemento do primeiro número
             var tn1 = document.getElementById('txtn1');
+            // Obtendo o elemento do segundo número
             var tn2 = document.getElementById('txtn2');
+            // Obtendo o elemento onde o resultado será exibido
             var res = document.getElementById('res');
+            
+            // Convertendo os valores dos campos para números
             var n1 = Number(tn1.value);
             var n2 = Number(tn2.value);
+            // Calculando a soma dos dois números
             var s = n1 + n2;
+            // Atualizando o conteúdo da div com o resultado da soma
             res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}.`;
         }
     </script>
 </body>
 </html>
-
