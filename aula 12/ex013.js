@@ -1,7 +1,7 @@
 var agora = new Date()
 var diaSem = agora.getDay()
 
-var diaSem = 2
+
 /*
 0 = Domingo
 1 = Seguinda
