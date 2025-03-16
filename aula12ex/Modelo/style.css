@@ -1,27 +1,88 @@
-@charset "UTF-8";
-
-body {
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    color: white;
+body {
+    background-color: #001f3f; /* Azul-marinho */
+    color: #ffffff; /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header h1 {
+    color: #ffcc00; /* Amarelo para destacar o título */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: #00264d; /* Azul-marinho mais claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
     text-align: center;
 }
 
-section{
-    background-color: white;
-    border-radius: 10px;
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Bordas claras */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff; /* Fundo branco */
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+input[type="button"] {
+    background-color: #0077b6; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #005f87; /* Azul mais escuro no hover */
+}
+
+#res {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222; /* Texto escuro */
+    background-color: #ffffff; /* Fundo branco */
     padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.274) 3px 3px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    text-align: center; /* Centraliza o texto */
+}
+
+#res img {
+    display: block;
+    margin: 15px auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o limite */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
 }
 
 footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-} 
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffcc00; /* Combina com o título */
+}
