@@ -6,83 +6,78 @@
     font-family: Arial, sans-serif;
 }
 
+/* Corpo da página */
 body {
-    background-color: #001f3f; /* Azul-marinho */
-    color: #ffffff; /* Texto branco */
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
-header h1 {
-    color: #ffcc00; /* Amarelo para destacar o título */
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+/* Cabeçalho */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
+/* Seção principal */
 section {
-    background-color: #00264d; /* Azul-marinho mais claro */
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 300px;
+    margin-top: 20px;
 }
 
+/* Caixa de entrada */
 input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd; /* Bordas claras */
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    background-color: #fff; /* Fundo branco */
 }
 
-input[type="radio"] {
-    margin: 10px;
-}
-
+/* Botão */
 input[type="button"] {
-    background-color: #0077b6; /* Azul vibrante */
+    background-color: #0077cc;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 12px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
 input[type="button"]:hover {
-    background-color: #005f87; /* Azul mais escuro no hover */
+    background-color: #005fa3;
 }
 
-#res {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #222; /* Texto escuro */
-    background-color: #ffffff; /* Fundo branco */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra elegante */
-    text-align: center; /* Centraliza o texto */
+/* Select */
+select {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
 }
 
-#res img {
-    display: block;
-    margin: 15px auto; /* Centraliza a imagem horizontalmente */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o limite */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas para a imagem */
-}
-
+/* Rodapé */
 footer {
     margin-top: 20px;
-    font-size: 14px;
-    color: #ffcc00; /* Combina com o título */
+    font-size: 0.9em;
+    color: #555;
 }
