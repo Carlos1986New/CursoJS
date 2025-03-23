@@ -26,6 +26,6 @@ function contar(){
     for (let c = i; c >= f; c -= p) {
     res.innerHTML += `${c} \u{1f449}`
     }
-    res.innerHTML += `🛌` }
+    res.innerHTML += `🍸` }
 }
 }
